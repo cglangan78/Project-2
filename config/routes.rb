@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
   root 'pictures#index'
 
-  get 'pictures/' => 'pictures#new'
+  get '/pictures/' => 'pictures#new'
 
-  post 'pictures/' => 'pictures#create'
+  post '/pictures/' => 'pictures#create'
 
-  get 'pictures/:id' => 'pictures#show', as: :picture
+  get '/pictures/:id' => 'pictures#show', as: :picture
 
 
-  get 'users'=> 'users#index'
+  get '/users'=> 'users#index'
 
 
 

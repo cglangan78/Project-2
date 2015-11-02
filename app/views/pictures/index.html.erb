@@ -1,6 +1,8 @@
 <h1>Pictures</h1>
 
 <% @pictures.each do |p| %>
-    Url: <%= p.url %>
+    <img class = 'thumbnails' src="<%= p.url %>" alt="<%= p.location %>" /> <br>
+    Location: <%= p.location %> <br>
+    Comments: <%= p.comments %> <br>
     <%= link_to 'GO TO PICTURE', picture_path(p) %> <br>
   <%end%>

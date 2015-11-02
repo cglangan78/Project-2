@@ -1,5 +1,5 @@
-<h1> The Picture You Clicked on - Hopefully </h1>
+<h1> The Picture You Clicked on: </h1>
 
-<h2>  Here is the picture: <%= @picture.url %> </h2>
+<h2> <%= @picture[:location]  %> </h2>
 
-<p> <%= @picture.user_id %> </p>
+<p> <img class = "fullsize" src="<%= @picture[:url] %>" alt="<%= @picture[:location] %>" /> </p>
