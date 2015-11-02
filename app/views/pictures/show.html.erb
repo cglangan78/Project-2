@@ -2,4 +2,8 @@
 
 <h2> <%= @picture[:location]  %> </h2>
 
-<p> <img class = "fullsize" src="<%= @picture[:url] %>" alt="<%= @picture[:location] %>" /> </p>
+<div>
+  <a href="/"><img class = "fullsize" src="<%= @picture[:url] %>" alt="<%= @picture[:location] %>" />
+  </a>
+  <%= @picture[:comments]  %> 
+</div
