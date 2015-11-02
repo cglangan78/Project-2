@@ -1,0 +1,6 @@
+<h1>Pictures</h1>
+
+<% @pictures.each do |p| %>
+    Url: <%= p.url %>
+    <%= link_to 'GO TO PICTURE', picture_path(p) %> <br>
+  <%end%>
